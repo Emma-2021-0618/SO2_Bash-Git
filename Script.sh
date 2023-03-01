@@ -60,26 +60,32 @@
     num2=20
     num3=5
     num4=25
-    num
+    num=0
 
     #Mayor que
     if [[ $num1 -gt $num2 ]]; then
     echo "el primer numero es mayor que el segundo"
+    fi
     #Menor que
     if [[ $num1 -lt $num2 ]]; then
     echo "el primer numero es menor  que el segundo"
+    fi
     #Mayor o igual
     if [[ $num1 -ge $num2 ]]; then
     echo "el primer numero es mayor que el segundo"
+    fi
     #Menor o igual
     if [[ $num1 -le $num2 ]]; then
     echo "el primer numero es menor  que el segundo"
+    fi
     #Igual que
     if [[ $num1 -eq $num2 ]]; then
     echo "Los numeros son iguales"
+    fi
     #diferente que
     if [[ $num1 -ne $num2 ]]; then
     echo "Los numeros son iguales"
+    fi
     #Con valor o sin valor
     if [[ -z "$num" ]]; then
     echo "variable vacia"
@@ -168,7 +174,4 @@
     #funcion con return, el cual retorna un valor aleatorio del 1 al 10
     funcion2() {
     return ${RANDOM:0:1}
-
-    x=$(funcion2)
-    funcion1 x
     }
